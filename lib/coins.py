@@ -597,8 +597,8 @@ class MFCoin(Coin):
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488b21e")
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
-    P2PKH_VERBYTE = bytes.fromhex("30")
-    P2SH_VERBYTES = bytes.fromhex("32")
+    P2PKH_VERBYTE = bytes.fromhex("33")
+    P2SH_VERBYTES = bytes.fromhex("05")
     WIF_BYTE = bytes.fromhex("b3")
     GENESIS_HASH = '5ca17b85ce10702fd5ce8f63a5657905ae8ba41c7b7a886e8d13b317386dda06'
     TX_COUNT = 50908
