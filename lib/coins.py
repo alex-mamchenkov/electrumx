@@ -591,6 +591,18 @@ class Litecoin(Coin):
         'eywr5eubdbbe2laq.onion s50008 t50007',
     ]
 
+class MFCoin(Coin):
+    NAME = "MFCoin"
+    SHORTNAME = "MFC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("b3")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    GENESIS_HASH = ('06da6d3817b3138d6e887a7b1ca48bae057965a5638fced52f7010ce857ba15c'
+                    'b5c4d139ee5f25ffbbe664eb17d567150cc7cb34fb3f7f561be6d010a2b5fd3b')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+
 
 class LitecoinTestnet(Litecoin):
     SHORTNAME = "XLT"
