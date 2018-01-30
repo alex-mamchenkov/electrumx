@@ -602,6 +602,9 @@ class MFCoin(Coin):
     GENESIS_HASH = ('06da6d3817b3138d6e887a7b1ca48bae057965a5638fced52f7010ce857ba15c'
                     'b5c4d139ee5f25ffbbe664eb17d567150cc7cb34fb3f7f561be6d010a2b5fd3b')
     DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 0
+    TX_COUNT_HEIGHT = 0
+    TX_PER_BLOCK = 10
 
 
 class LitecoinTestnet(Litecoin):
