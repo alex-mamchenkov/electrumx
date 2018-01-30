@@ -599,8 +599,8 @@ class MFCoin(Coin):
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
     P2PKH_VERBYTE = bytes.fromhex("b3")
     P2SH_VERBYTES = [bytes.fromhex("05")]
-    GENESIS_HASH = ('06da6d3817b3138d6e887a7b1ca48bae057965a5638fced52f7010ce857ba15c'
-                    'b5c4d139ee5f25ffbbe664eb17d567150cc7cb34fb3f7f561be6d010a2b5fd3b')
+    GENESIS_HASH = ('5ca17b85ce10702fd5ce8f63a5657905ae8ba41c7b7a886e8d13b317386dda06'
+                    '3bfdb5a210d0e61b567f3ffb34cbc70c1567d517eb64e6bbff255fee39d1c4b5')
     DESERIALIZER = lib_tx.DeserializerSegWit
     TX_COUNT = 0
     TX_COUNT_HEIGHT = 0
