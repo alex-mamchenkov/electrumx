@@ -591,7 +591,7 @@ class Litecoin(Coin):
         'eywr5eubdbbe2laq.onion s50008 t50007',
     ]
 
-class MFCoin(ScryptMixin, Coin):
+class MFCoin(Coin):
     NAME = "MFCoin"
     SHORTNAME = "MFC"
     NET = "mainnet"
@@ -600,6 +600,7 @@ class MFCoin(ScryptMixin, Coin):
     P2PKH_VERBYTE = bytes.fromhex("b3")
     P2SH_VERBYTES = [bytes.fromhex("05")]
     GENESIS_HASH = '5ca17b85ce10702fd5ce8f63a5657905ae8ba41c7b7a886e8d13b317386dda06'
+    DESERIALIZER = lib_tx.DeserializerTxTime
     TX_COUNT = 50908
     TX_COUNT_HEIGHT = 93765
     TX_PER_BLOCK = 2
