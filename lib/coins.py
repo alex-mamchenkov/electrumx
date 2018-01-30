@@ -591,7 +591,7 @@ class Litecoin(Coin):
         'eywr5eubdbbe2laq.onion s50008 t50007',
     ]
 
-class MFCoin(Coin):
+class MFCoin(ScryptMixin, Coin):
     NAME = "MFCoin"
     SHORTNAME = "MFC"
     NET = "mainnet"
