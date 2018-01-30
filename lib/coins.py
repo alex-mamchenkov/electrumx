@@ -601,9 +601,9 @@ class MFCoin(Coin):
     P2SH_VERBYTES = [bytes.fromhex("05")]
     GENESIS_HASH = '5ca17b85ce10702fd5ce8f63a5657905ae8ba41c7b7a886e8d13b317386dda06'
     DESERIALIZER = lib_tx.DeserializerSegWit
-    TX_COUNT = 0
-    TX_COUNT_HEIGHT = 0
-    TX_PER_BLOCK = 10
+    TX_COUNT = 50908
+    TX_COUNT_HEIGHT = 93765
+    TX_PER_BLOCK = 2
 
 
 class LitecoinTestnet(Litecoin):
