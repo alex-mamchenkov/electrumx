@@ -602,8 +602,6 @@ class MFCoin(Coin):
     TX_COUNT = 50908
     TX_COUNT_HEIGHT = 93765
     TX_PER_BLOCK = 2
-    HEADER_HASH = None
-    DESERIALIZER = lib_tx.DeserializerTxTime
 
 class LitecoinTestnet(Litecoin):
     SHORTNAME = "XLT"
