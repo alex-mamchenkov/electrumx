@@ -110,6 +110,10 @@ revert to 1.1.x if you wish.  The initial synchronisation process
 should be around 10-15% faster than 1.1, owing to this change and
 Justin Arthur's optimisations from 1.1.1.
 
+Version 1.2.2
+-------------
+- add MFCoin support
+
 Version 1.2.1
 -------------
 
